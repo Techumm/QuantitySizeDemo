@@ -4,15 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EA0B5567-7D53-45F2-AD84-4B2FA3CD14F7}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>PresentationConsoleProject</RootNamespace>
-    <AssemblyName>PresentationConsoleProject</AssemblyName>
+    <ProjectGuid>{E1631386-438C-4AD2-BE26-1EC470765F50}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLogic</RootNamespace>
+    <AssemblyName>BusinessLogic</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,20 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Validator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessEnitity\BusinessEnitity.csproj">
       <Project>{6112889a-bbae-4af2-8226-3885249c7433}</Project>
       <Name>BusinessEnitity</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
-      <Project>{e1631386-438c-4ad2-be26-1ec470765f50}</Project>
-      <Name>BusinessLogic</Name>
     </ProjectReference>
     <ProjectReference Include="..\DataLogiv\DataLogic.csproj">
       <Project>{90557718-a140-48d4-81d8-fc3f0b70a5b0}</Project>
