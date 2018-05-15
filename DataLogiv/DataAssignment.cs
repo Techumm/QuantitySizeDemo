@@ -24,7 +24,7 @@ namespace DataLogic
                 },
                 new Product
                 {
-                    ProductId = 1,
+                    ProductId = 3,
                     Price = 50,
                     Quantity = 60
                 }

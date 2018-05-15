@@ -11,8 +11,16 @@ namespace PresentationConsoleProject
     {
         static void Main(string[] args)
         {
+            bool result;
             Validator validator = new Validator();
-            validator.IsValid();
+            for (int i = 1; i <= 3; i++)
+            {
+                result=validator.IsValid(i);
+                if(result)
+                    Console.WriteLine("Match for product id ",i);
+                else
+                    Console.WriteLine("Missmatch for product id ",i);
+            }
             Console.ReadKey();
         }
     }
